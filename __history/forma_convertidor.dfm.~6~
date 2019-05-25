@@ -1,0 +1,190 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'pa'
+  ClientHeight = 434
+  ClientWidth = 786
+  Color = clActiveCaption
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 8
+    Top = 8
+    Width = 177
+    Height = 418
+    Color = clMoneyGreen
+    ParentBackground = False
+    TabOrder = 0
+    object RadioConvertidor: TRadioGroup
+      Left = 8
+      Top = 8
+      Width = 161
+      Height = 401
+      Caption = 'Convertidor'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemIndex = 0
+      Items.Strings = (
+        'Divisa'
+        'Vol'#250'men'
+        'Longitud'
+        'Peso y Masa'
+        'Temperatura'
+        'Energ'#237'a'
+        #193'rea'
+        'Velocidad'
+        'Tiempo'
+        'Potencia'
+        'Datos'
+        'Presi'#243'n'
+        #193'ngulo')
+      ParentFont = False
+      TabOrder = 0
+      OnClick = RadioConvertidorClick
+    end
+  end
+  object PanelDivisa: TPanel
+    Left = 207
+    Top = 8
+    Width = 448
+    Height = 418
+    Color = cl3DLight
+    ParentBackground = False
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 42
+      Top = 59
+      Width = 52
+      Height = 25
+      Caption = 'Pesos'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 42
+      Top = 192
+      Width = 49
+      Height = 35
+      Caption = 'D'#243'lar'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 152
+      Top = 339
+      Width = 144
+      Height = 44
+      Caption = 'Divisa'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -37
+      Font.Name = 'Castellar'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object EPesos: TEdit
+      Left = 42
+      Top = 90
+      Width = 192
+      Height = 31
+      TabOrder = 0
+    end
+    object EDolar: TEdit
+      Left = 42
+      Top = 233
+      Width = 192
+      Height = 35
+      TabOrder = 1
+    end
+  end
+  object PanelVolumen: TPanel
+    Left = 593
+    Top = 16
+    Width = 185
+    Height = 41
+    Color = cl3DLight
+    ParentBackground = False
+    TabOrder = 2
+    Visible = False
+  end
+  object PanelLongitud: TPanel
+    Left = 593
+    Top = 63
+    Width = 185
+    Height = 41
+    Color = cl3DLight
+    ParentBackground = False
+    TabOrder = 3
+  end
+  object PanelPesoYMasa: TPanel
+    Left = 593
+    Top = 110
+    Width = 185
+    Height = 41
+    Color = cl3DLight
+    ParentBackground = False
+    TabOrder = 4
+  end
+  object PanelTemperatura: TPanel
+    Left = 593
+    Top = 168
+    Width = 185
+    Height = 41
+    Color = cl3DLight
+    ParentBackground = False
+    TabOrder = 5
+  end
+  object PanelEnergia: TPanel
+    Left = 593
+    Top = 215
+    Width = 185
+    Height = 41
+    Color = cl3DLight
+    ParentBackground = False
+    TabOrder = 6
+  end
+  object PanelArea: TPanel
+    Left = 593
+    Top = 262
+    Width = 185
+    Height = 41
+    Color = cl3DLight
+    ParentBackground = False
+    TabOrder = 7
+  end
+  object PanelVelocidad: TPanel
+    Left = 593
+    Top = 309
+    Width = 185
+    Height = 41
+    Color = cl3DLight
+    ParentBackground = False
+    TabOrder = 8
+  end
+  object PanelTiempo: TPanel
+    Left = 593
+    Top = 356
+    Width = 185
+    Height = 41
+    Color = cl3DLight
+    ParentBackground = False
+    TabOrder = 9
+  end
+end

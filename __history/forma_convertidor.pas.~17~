@@ -1,0 +1,235 @@
+unit forma_convertidor;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    Panel1: TPanel;
+    RadioConvertidor: TRadioGroup;
+    PanelDivisa: TPanel;
+    PanelVolumen: TPanel;
+    Label1: TLabel;
+    Label2: TLabel;
+    EPesos: TEdit;
+    EDolar: TEdit;
+    PanelLongitud: TPanel;
+    PanelPesoYMasa: TPanel;
+    PanelTemperatura: TPanel;
+    PanelEnergia: TPanel;
+    PanelArea: TPanel;
+    PanelVelocidad: TPanel;
+    PanelTiempo: TPanel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    Label10: TLabel;
+    PanelPotencia: TPanel;
+    PanelDatos: TPanel;
+    PanelPresion: TPanel;
+    PanelAngulo: TPanel;
+    Label11: TLabel;
+    Label12: TLabel;
+    Label13: TLabel;
+    Label14: TLabel;
+    Label15: TLabel;
+    procedure RadioConvertidorClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.RadioConvertidorClick(Sender: TObject);
+begin
+    //Evento ON CLIC DE RADIO BUTTON
+      //EVENTO ON CLICK DE RADIO BUTTON
+       case RadioConvertidor.ItemIndex of
+             0 :   begin
+                     PanelDivisa.Visible:=true;
+                     PanelVolumen.Visible:=false;
+                     PanelLongitud.Visible:=false;
+                     PanelPesoYMasa.Visible:=false;
+                     PanelTemperatura.Visible:=false;
+                     PanelEnergia.Visible:=false;
+                     PanelArea.Visible:=false;
+                     PanelVelocidad.Visible:=false;
+                     PanelTiempo.Visible:=false;
+                     PanelPotencia.Visible:=false;
+                     PanelDatos.Visible:=false;
+                     PanelPresion.Visible:=false;
+                     PanelAngulo.Visible:=false;
+                  end;
+
+             1 :   begin
+                     PanelVolumen.Visible:=true;
+                     PanelDivisa.Visible:=false;
+                     PanelLongitud.Visible:=false;
+                     PanelPesoYMasa.Visible:=false;
+                     PanelTemperatura.Visible:=false;
+                     PanelEnergia.Visible:=false;
+                     PanelArea.Visible:=false;
+                     PanelVelocidad.Visible:=false;
+                     PanelTiempo.Visible:=false;
+                     PanelPotencia.Visible:=false;
+                     PanelDatos.Visible:=false;
+                     PanelPresion.Visible:=false;
+                     PanelAngulo.Visible:=false;
+                  end;
+
+             2:    begin
+                     PanelLongitud.Visible:=true;
+                     PanelDivisa.Visible:=false;
+                     PanelVolumen.Visible:=false;
+                     PanelPesoYMasa.Visible:=false;
+                     PanelTemperatura.Visible:=false;
+                     PanelEnergia.Visible:=false;
+                     PanelArea.Visible:=false;
+                     PanelVelocidad.Visible:=false;
+                     PanelTiempo.Visible:=false;
+                     PanelPotencia.Visible:=false;
+                     PanelDatos.Visible:=false;
+                     PanelPresion.Visible:=false;
+                     PanelAngulo.Visible:=false;
+                  end;
+
+             3:     begin
+                     PanelPesoYMasa.Visible:=true;
+                     PanelDivisa.Visible:=false;
+                     PanelVolumen.Visible:=false;
+                     PanelLongitud.Visible:=false;
+                     PanelTemperatura.Visible:=false;
+                     PanelEnergia.Visible:=false;
+                     PanelArea.Visible:=false;
+                     PanelVelocidad.Visible:=false;
+                     PanelTiempo.Visible:=false;
+                     PanelPotencia.Visible:=false;
+                     PanelDatos.Visible:=false;
+                     PanelPresion.Visible:=false;
+                     PanelAngulo.Visible:=false;
+                  end;
+
+             4:    begin
+                     PanelTemperatura.Visible:=true;
+                     PanelDivisa.Visible:=false;
+                     PanelVolumen.Visible:=false;
+                     PanelLongitud.Visible:=false;
+                     PanelPesoYMasa.Visible:=false;
+                     PanelEnergia.Visible:=false;
+                     PanelArea.Visible:=false;
+                     PanelVelocidad.Visible:=false;
+                     PanelTiempo.Visible:=false;
+                     PanelPotencia.Visible:=false;
+                     PanelDatos.Visible:=false;
+                     PanelPresion.Visible:=false;
+                     PanelAngulo.Visible:=false;
+                  end;
+
+             5:    begin
+                     PanelEnergia.Visible:=true;
+                     PanelDivisa.Visible:=false;
+                     PanelVolumen.Visible:=false;
+                     PanelLongitud.Visible:=false;
+                     PanelPesoYMasa.Visible:=false;
+                     PanelTemperatura.Visible:=false;
+                     PanelArea.Visible:=false;
+                     PanelVelocidad.Visible:=false;
+                     PanelTiempo.Visible:=false;
+                     PanelPotencia.Visible:=false;
+                     PanelDatos.Visible:=false;
+                     PanelPresion.Visible:=false;
+                     PanelAngulo.Visible:=false;
+                  end;
+
+             6:   begin
+                       PanelArea.Visible:=true;
+                       PanelDivisa.Visible:=false;
+                       PanelVolumen.Visible:=false;
+                       PanelLongitud.Visible:=false;
+                       PanelPesoYMasa.Visible:=false;
+                       PanelTemperatura.Visible:=false;
+                       PanelArea.Visible:=false;
+                       PanelVelocidad.Visible:=false;
+                       PanelTiempo.Visible:=false;
+                       PanelPotencia.Visible:=false;
+                       PanelDatos.Visible:=false;
+                       PanelPresion.Visible:=false;
+                       PanelAngulo.Visible:=false;
+                  end;
+
+             7:     begin
+                       PanelVelocidad.Visible:=true;
+                       PanelDivisa.Visible:=false;
+                       PanelVolumen.Visible:=false;
+                       PanelLongitud.Visible:=false;
+                       PanelPesoYMasa.Visible:=false;
+                       PanelTemperatura.Visible:=false;
+                       PanelEnergia.Visible:=false;
+                       PanelArea.Visible:=false;
+                       PanelTiempo.Visible:=false;
+                       PanelPotencia.Visible:=false;
+                       PanelDatos.Visible:=false;
+                       PanelPresion.Visible:=false;
+                       PanelAngulo.Visible:=false;
+                  end;
+
+             8:     begin
+                       PanelTiempo.Visible:=true;
+                       PanelDivisa.Visible:=false;
+                       PanelVolumen.Visible:=false;
+                       PanelLongitud.Visible:=false;
+                       PanelPesoYMasa.Visible:=false;
+                       PanelTemperatura.Visible:=false;
+                       PanelEnergia.Visible:=false;
+                       PanelArea.Visible:=false;
+                       PanelVelocidad.Visible:=false;
+                       PanelPotencia.Visible:=false;
+                       PanelDatos.Visible:=false;
+                       PanelPresion.Visible:=false;
+                       PanelAngulo.Visible:=false;
+                  end;
+
+             9:     begin
+                    PanelVolumen.Visible := true;
+                    PanelDivisa.Visible  := false;
+                  end;
+
+             10:    begin
+                    PanelVolumen.Visible := true;
+                    PanelDivisa.Visible  := false;
+                  end;
+
+             11:    begin
+                    PanelVolumen.Visible := true;
+                    PanelDivisa.Visible  := false;
+                  end;
+
+             12:    begin
+                    PanelVolumen.Visible := true;
+                    PanelDivisa.Visible  := false;
+                  end;
+
+             13:   begin
+                    PanelVolumen.Visible := true;
+                    PanelDivisa.Visible  := false;
+                  end;
+       end;
+
+
+end;
+
+end.

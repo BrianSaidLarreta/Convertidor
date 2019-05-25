@@ -1,0 +1,114 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'pa'
+  ClientHeight = 434
+  ClientWidth = 712
+  Color = clActiveCaption
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 8
+    Top = 8
+    Width = 177
+    Height = 418
+    Color = clMoneyGreen
+    ParentBackground = False
+    TabOrder = 0
+    object RadioConvertidor: TRadioGroup
+      Left = 8
+      Top = 8
+      Width = 161
+      Height = 401
+      Caption = 'Convertidor'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemIndex = 0
+      Items.Strings = (
+        'Divisa'
+        'Vol'#250'men'
+        'Longitud'
+        'Peso y Masa'
+        'Temperatura'
+        'Energ'#237'a'
+        #193'rea'
+        'Velocidad'
+        'Tiempo'
+        'Potencia'
+        'Datos'
+        'Presi'#243'n'
+        #193'ngulo')
+      ParentFont = False
+      TabOrder = 0
+      OnClick = RadioConvertidorClick
+    end
+  end
+  object PanelDivisa: TPanel
+    Left = 207
+    Top = 8
+    Width = 448
+    Height = 418
+    Color = clSilver
+    ParentBackground = False
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 96
+      Top = 56
+      Width = 52
+      Height = 25
+      Caption = 'Pesos'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 99
+      Top = 108
+      Width = 49
+      Height = 25
+      Caption = 'D'#243'lar'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Edit1: TEdit
+      Left = 177
+      Top = 63
+      Width = 121
+      Height = 21
+      TabOrder = 0
+      Text = 'Edit1'
+    end
+    object Edit2: TEdit
+      Left = 177
+      Top = 115
+      Width = 121
+      Height = 21
+      TabOrder = 1
+      Text = 'Edit1'
+    end
+  end
+  object PanelVolumen: TPanel
+    Left = 511
+    Top = 112
+    Width = 185
+    Height = 41
+    TabOrder = 2
+    Visible = False
+  end
+end

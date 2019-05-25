@@ -1,0 +1,78 @@
+unit forma_convertidor;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    Panel1: TPanel;
+    RadioConvertidor: TRadioGroup;
+    PanelDivisa: TPanel;
+    PanelVolumen: TPanel;
+    Label1: TLabel;
+    Label2: TLabel;
+    EPesos: TEdit;
+    EDolar: TEdit;
+    PanelLongitud: TPanel;
+    PanelPesoYMasa: TPanel;
+    PanelTemperatura: TPanel;
+    PanelEnergia: TPanel;
+    PanelArea: TPanel;
+    PanelVelocidad: TPanel;
+    PanelTiempo: TPanel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    procedure RadioConvertidorClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.RadioConvertidorClick(Sender: TObject);
+begin
+    //Evento ON CLIC DE RADIO BUTTON
+      if RadioConvertidor.ItemIndex = 0 then
+        begin
+        PanelDivisa.Visible:=true;
+        PanelVolumen.Visible:=false;
+         PanelLongitud.Visible:=false;
+         PanelPesoYMasa.Visible:=false;
+        end;
+      if RadioConvertidor.ItemIndex = 1 then
+        begin
+        PanelVolumen.Visible:=true;
+        PanelDivisa.Visible:=false;
+         PanelLongitud.Visible:=false;
+         PanelPesoYMasa.Visible:=false;
+        end;
+      if RadioConvertidor.ItemIndex = 2 then
+        begin
+        PanelLongitud.Visible:=true;
+        PanelDivisa.Visible:=false;
+        PanelVolumen.Visible:=false;
+        PanelPesoYMasa.Visible:=false;
+        end;
+      if RadioConvertidor.ItemIndex = 3 then
+        begin
+        PanelPesoYMasa.Visible:=true;
+        PanelLongitud.Visible:=false;
+        PanelDivisa.Visible:=false;
+        PanelVolumen.Visible:=false;
+        end;
+
+end;
+
+end.
